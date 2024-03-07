@@ -1,0 +1,17 @@
+.body{
+    width:393px;
+    height:593px;
+    background: linear-gradient(157deg, #000200 20.6%, #003054 100%);
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+    align-items:center;
+}
+
+#WeatherWidgets{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+}

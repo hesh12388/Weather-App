@@ -1,0 +1,92 @@
+#kp-widget{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+
+#kp-forecast{
+    display:flex;
+    flex-direction: column;
+    width: 369px;
+    height: 211px; 
+    border-radius: 51px;
+    background: #0A1132; 
+    justify-content: center;
+    gap:10px;
+    align-items: center;
+}
+#kp-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25px;
+    width:300px;
+    align-items: center;
+}
+
+#kp-header{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+#kp-title{
+    color: rgba(235, 235, 239, 0.33);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+#kp-index{
+    width: 55px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    color:white;
+    border-radius: 59.5px;
+    background: #0A1132;
+    border:1px solid white;
+    align-items: center;
+    padding-top:10px;
+}
+
+#stars-icon{
+    width: 29.815px;
+    height: 27.018px;
+}
+
+#kp-value{
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    width: 13.115px;
+    height: 20px;
+}
+
+#time{
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    width: 34.973px;
+    height: 17px;
+    text-align: center;
+}
