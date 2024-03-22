@@ -1,0 +1,194 @@
+/*this style displays the page as a light grey colour, covering the entire viewport height*/
+#mainDiv
+{
+display: flex;
+  flex-direction: column;
+  background:linear-gradient(157deg, #000200 20.6%, #003054 100%);
+  height:100vh;
+  max-height: 100%;
+  position: fixed;
+}
+
+
+/*the h1 elements are used to make certain text stand out for the user. e.g "Plan Trip" in bold, large writing makes
+it clear what the purpose of the page is*/
+h1
+{
+    text-align:center;
+    font-family: Tahoma,sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0,0.5);
+    color:white;
+}
+/* the results button is centered to make the layout look neat*/
+#findResultsButton
+{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 2em;
+}
+/*font-size for the button text is set to 105% to make it more clearer to read*/
+#button
+{
+    background-color:white;
+    padding:1rem;
+    font-size:105%;
+    border-radius:0.75rem;
+}
+/*the background and font colour of the button changes when the user hovers over it*/
+#button:hover
+{
+    color:white;
+    background-color:rgb(173, 173, 184);
+}
+/*this is the container that displays a h2 element stating either "Loading results..." or "Results:"*/
+#resultsTextContainer
+{
+    display:flex;
+    justify-content:center;
+}
+
+#fromTo{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#startEnd{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+/*this div element contains the input elements. flex-wrap:wrap is used to make sure that the elements
+move onto a new line when the there is no space for them all to fit on a single line*/
+#travelInfo
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:50vw;
+    margin: auto;
+}
+/*rounded corners have been used for the input elements and the button to make the design look more modern and smart*/
+#travelInfo input
+{
+    margin:0.5rem;
+    border-radius:0.75rem;
+    max-width:8rem;
+    min-height:2rem;
+}
+/*this style is used to centre the elements in the travelInfo div */
+#travelInfo label,input,button,h3
+{
+    margin:auto;
+}
+
+#image{
+    min-height: 5em;
+    min-width: 5em;
+    border-radius: 0.5em;
+}
+
+#ResultsText{
+    color:white;
+}
+#hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    gap:1em;
+}
+#review, #price{
+    font-size:1em;
+    text-align: center;
+}
+#hotelName{
+    text-align: center;
+}
+/*this style is used for each hotel listing.*/
+#listOfHotelInfo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height:15vh;
+    padding:1em;
+    list-style-type: none;
+    background-color: rgba(255,255,255, 0.1);
+    border-radius:1.5rem;
+    margin:0;
+    color:white;
+}
+
+#From, #To, #StartDate, #ReturnDate{
+   padding:0.3em;
+   border-radius: 0.5em;
+   height:1.5em;
+   width:10em;
+}
+#hotelResults  /*grid is used instead of flexbox because it gives more control over how many columns there should be*/
+{
+    display:flex;
+    flex-direction: column;
+    gap:1em;   /*a small gap is present in between grid elements to ensure that each hotel listing can be
+    identified as a separate entity. It is also used to make the design look neater.*/
+    height:64vh;
+    overflow: scroll;
+    padding: 2em;
+    padding-top:0;
+}
+/*media queries are used for the main hotelResults grid
+When the screen width is less than or equal to 55em, the number of columns drops down to 2*/
+
+
+@media(max-width:768px){
+    #travelInfo{
+        flex-direction: column;
+    }
+}
+/*when the screen width is very small (e.g. for mobile devices), the number of columns drops to 1*/
+@media (max-width:35em)
+{
+    #hotelResults
+    {
+        display:flex;
+        flex-direction: column;
+        gap:1em;
+    }
+}
+/*the hotel name is rendered in bold to make it very obvious and clear to the user*/
+#hotelName
+{
+    font-family:Helvetica,sans-serif;
+    font-weight:bold;
+}
+/*italics are used for the type of accomodation to differentiate from the other pieces of information provided*/
+#typeOfAccommodation
+{
+    font-family:Helvetica,sans-serif;
+    font-style:italic;
+}
+/*the image and "No Results found" message are centered using flex*/
+#noPropertiesFound
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/*the image (a red cross) has been used to clearly indicate to the user that something did not go to plan*/
+#noPropertiesFound img
+{
+    max-width:10%;
+    height:auto;
+}
+

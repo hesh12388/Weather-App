@@ -1,0 +1,201 @@
+/* Longterm.css */
+.app {
+  text-align: center;
+  background: linear-gradient(157deg, #000200 20.6%, #003054 100%);
+  height:100vh;
+  max-height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+  width: 100vw;
+  max-width: 100%;
+}
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.forecast-container {
+  width: 100vw;
+  max-width: 100%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height:85vh;
+  overflow: scroll;
+  
+}
+
+.Cal {
+  padding-top: 20px; 
+}
+
+.forecast-header {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  margin-top: 10px;
+  text-align: center; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style:normal;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0,0.5);
+}
+
+
+.kp-index-header {
+  margin-bottom: 0.5em;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2em;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0,0.5);
+  padding-left:1em;
+}
+
+.kp-index-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.kp-index-item {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.key-section {
+  display: flex;
+  flex-direction: column; /* This will stack items vertically */
+  margin: 20px 0;
+  color:white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0,0.5);
+  padding-left: 1em;
+}
+
+.key-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add space between items */
+}
+
+.color-indicator {
+  height: 50px; /* Increased size */
+  width: 50px; /* Increased size */
+  display: inline-block;
+  margin-right: 8px;
+}
+.img{
+  height: 20px;
+  width: 35px;
+  margin-bottom: 20px;
+}
+.img2{
+  height: 20px;
+  width: 35px;
+  margin-bottom: 20px;
+}
+.img3{
+  height: 20px;
+  width: 35px;
+  margin-bottom: 20px;
+}
+.images{
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  margin-top: -200px;
+}
+
+/* Tablet Adjustments */
+@media (min-width: 601px) and (max-width: 1280px) {
+  .forecast-container {
+    width: 80%; /* More suitable for tablet screens */
+    padding: 2rem; 
+  }
+  .forecast-header, .kp-index-header {
+    font-size: 1.8em; 
+  }
+  .key-section {
+    display: flex;
+    flex-direction:row; /* This will stack items horizontally */
+  }
+  .key-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Add space between items */
+    margin-left: 10px;
+  }
+  .calendar-container {
+    
+    padding: 1rem;
+  }
+  .calendar-day, .calendar-day-header {
+    height: 60px;
+  }
+  .calendar-day > span {
+    font-size: 1.2em; 
+  }
+}
+/* Desktop Adjustments */
+@media (min-width: 1280px) {
+  .forecast-container {
+    width: 60%; /* Optimal width for larger screens */
+    margin: auto; /* Center the container */
+    padding: 2.5rem; /* More padding for aesthetic spacing */
+  }
+  .forecast-header, .kp-index-header {
+    font-size: 2.2em; /* Larger font sizes for desktop */
+  }
+  .key-item {
+    font-size: 1.2em; /* Increase key label font size for readability */
+  }
+  .color-indicator {
+    height: 60px; /* Larger indicators for visual clarity */
+    width: 60px;
+  }
+  .calendar-container {
+    padding: 1.5rem; 
+  }
+  .key-section {
+    display: flex;
+    flex-direction:row; 
+  }
+  .key-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; 
+    margin-left: 10px;
+  }
+  .calendar-day, .calendar-day-header {
+    height: 70px; 
+  }
+  .calendar-day > span {
+    font-size: 1.4em; 
+  }
+}

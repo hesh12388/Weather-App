@@ -1,0 +1,26 @@
+.body{
+    width:100vw;
+    height:65vh;
+    display:flex;
+    flex-direction: column;
+    gap:0.5em;
+    align-items:center;
+}
+
+
+.inner-body{
+    width:100vw;
+    height:55vh;
+    overflow: scroll;
+    display:flex;
+    flex-direction: column;
+    gap:1em;
+    align-items:center;
+}
+#WeatherWidgets{
+    display:flex;
+    flex-direction:row;
+    gap:0.5em;
+    align-items: center;
+    justify-content: center;
+}

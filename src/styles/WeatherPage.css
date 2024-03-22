@@ -1,0 +1,66 @@
+#main{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    margin:0;
+    padding:0;
+    position: fixed;
+    background: linear-gradient(157deg, #000200 20.6%, #003054 100%);
+    align-items: center;
+}
+
+
+input{
+    text-align: center;
+    background-color: white;
+    color:grey;
+    border:none;
+    border-radius: 5px;
+    position: relative;
+}
+
+#search-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    padding:0.2em;
+}
+
+#city{
+    background-color:transparent;
+    font-size: 1em;
+}
+
+#pin-button{
+    height:2em;
+    width:2em;
+}
+
+#pin-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    padding:0.2em;
+}
+.searchBar{
+    width:100vw;
+    height:2em;
+    width:70%;
+    position:relative;
+    top:1rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+#list-button{
+    width:2em;
+    height:2em;
+}
+#search-bar-inner{
+    display:flex;
+    align-items: center;
+    gap:1em;
+}

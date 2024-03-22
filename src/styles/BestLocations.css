@@ -1,0 +1,151 @@
+.nearestLocations{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    overflow: scroll;
+    height:46vh;
+}
+
+
+#locate{
+    height:40px;
+    width:40px;
+    object-fit: fill;
+    margin-left:20px;
+}
+
+#locationName{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding:0.5em;
+    height:1.5em;
+
+}
+
+#locationName:focus{
+    outline:none;
+
+}
+button{
+    border: none;
+    background: none;
+    padding:0;
+    margin:0;
+    box-shadow: none;
+}
+#nearestLocation-page{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(157deg, #000200 20.6%, #003054 100%);
+    gap:1em;
+    position: fixed;
+}
+
+#nearestLocation-page2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    height:100vh;
+    width:100vw;
+    background: linear-gradient(157deg, #000200 20.6%, #003054 100%);
+}
+p{
+    color:white;
+    font-size:18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#map{
+    width:90vw;
+    height:40vh;
+    padding:0px;
+    align-self: center;
+    border-radius: 15px;
+    margin-inline: 1em;
+}
+
+#search-button{
+    height:40px;
+    width:40px;
+}
+#nav-bar{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    height:3em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#location{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px;
+    border-bottom: 1px solid grey;
+    width:88vw;
+    align-items: center;
+}
+
+#radius-slider{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    gap:0.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding:0.5em;
+    border-radius: 0.5em;
+    color:gray;
+}
+
+#location-title{
+    display: flex;
+    flex-direction: column;
+    width:auto;
+}
+
+#aurora-flex{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#city-name{
+    color:white;
+    font-size:1.5em;
+}
+
+#distance{
+    color:grey;
+    font-size: 1em;
+}
+
+
+#best-location-title{
+    color:white;
+    font-size:2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0,0.5);
+}
+#aurora-percentage{
+    display:flex;
+    font-size:20px;
+    width:50px;
+    height:50px;
+    color:white;
+    background-color: green;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:568px){
+    #locationName{
+        width:6em;
+    }
+}
